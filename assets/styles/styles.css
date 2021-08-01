@@ -1,0 +1,136 @@
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'ABeeZee', sans-serif;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows:  20vh 10vh 15vh 45vh 30vh;
+}
+
+h1 {
+    font-family: 'Barrio', cursive;
+    font-size: 4rem;
+
+    grid-column: 4 / span 6;
+    justify-self: center;
+    align-self: center;
+}
+
+h2 {
+    font-size: 3rem;
+    letter-spacing: 0.1em;
+}
+
+label {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+input[type=text] {
+    font-size: 1.25rem;
+}
+
+img {
+    width: 100%;
+}
+
+#game-results {
+    display: none;
+}
+
+#game-results button {
+    font-size: 1.25rem;
+    padding: 1.5em 0;
+    align-self: center;
+}
+
+.winner {
+    border: 2px solid red;
+}
+
+.draw {
+    border: 2px solid blue;
+}
+
+section {
+    grid-column: 3 / span 8;
+    grid-gap: 2em;
+}
+
+#name-entry {
+    grid-column: 4 / span 5;
+    grid-row-start: 2;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+label {
+    justify-self: end;
+}
+
+#name-display {
+    grid-row-start: 3;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+#name-display p {
+    font-size: 2rem;
+}
+
+#move-choice, #game-results {
+    grid-row-start: 4;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#move-choice {
+    display: grid;
+    align-items: stretch;
+    justify-items: stretch;
+}
+
+.game-button {
+    max-width: 100%;
+    max-height: 100%;
+
+    border: none;
+    background: none;
+
+    position: relative;
+}
+
+.game-button img {
+    position: relative;
+    z-index: -1;
+}
+
+#score {
+    grid-row-start: 5;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 10vh 10vh;
+}
+
+#score p {
+    grid-row-start: 2;
+
+    font-size: 1.25rem;
+}

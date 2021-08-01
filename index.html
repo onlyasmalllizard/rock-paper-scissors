@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Barrio&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+
+    <title>	
+        &#128074;	
+        &#9995;	
+        &#9996;</title>
+</head>
+<body>
+    <main>
+        <h1>Rock, Paper, Scissors</h1>
+        <section id='name-entry'>
+            <label for="name">
+                Enter your name:
+            </label>
+            <input type="text" name='name'id='player-name-input' placeholder='Player Name' maxlength='10' pattern='[\D][\w]*'>
+        </section>
+        <section id='name-display' class='main-game-board'>
+            <p id='player-name-display'>You</p>
+            <p>vs</p>
+            <p id='computer-name-display'>Computer</p>
+        </section>
+        <section id='move-choice' class='main-game-board'>
+            <button id='rock' value='rock' class='game-button'>
+                <img src="./assets/images/rock.png" alt="Rock">
+            </button>
+            <button id='paper' value='paper' class='game-button'>
+                <img src="./assets/images/paper.png" alt="Paper">
+            </button>
+            <button id='scissors' value='scissors' class='game-button'>
+                <img src="./assets/images/scissors.png" alt="Scissors">
+            </button>
+        </section>
+        <section id='game-results' class='main-game-board'>
+            <img src="" alt="" id='player-move' class='results-image'>
+            <button id='play-again'>Play Again</button>
+            <img src="" alt="" id='computer-move' class='results-image'>
+        </section>
+        <section id='score'>
+            <h2>Score</h2>
+            <p>Games Played: <b id='games-played' class='score-display'>0</b></p>
+            <p>Games Won: <b id='games-won' class='score-display'>0</b></p>
+            <p>Games Lost: <b id='games-lost' class='score-display'>0</b></p>
+            <p>Games Drawn: <b id='games-drawn' class='score-display'>0</b></p>
+        </section>
+    </main>
+    <script src="./assets/scripts/index.js"></script>
+</body>
+</html>
